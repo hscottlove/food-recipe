@@ -1,5 +1,5 @@
 import React from 'react';
-import Ingredient from './Ingredient';
+import Ingredient from '../components/Ingredient';
 
 export default function IngredientList({ ingredients }) {
   return (

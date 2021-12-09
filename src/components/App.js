@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
-import RecipeList from './components/RecipeList';
-import RecipeEdit from './components/RecipeEdit';
-import './css/App.css';
+import RecipeList from '../components/RecipeList';
+import RecipeEdit from '../components/RecipeEdit';
+import '../css/App.css';
 import { v4 as uuidv4 } from 'uuid';
 
 export const RecipeContext = React.createContext();
