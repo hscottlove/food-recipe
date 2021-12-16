@@ -15,12 +15,12 @@ export default function App() {
   });
 
   useEffect(() => {
-    const recipeJSON = localStorage.getItem(LOCAL_STORAGE_KEY);
+    const recipeJSON = sessionStorage.getItem(LOCAL_STORAGE_KEY);
     if (recipeJSON != null) setRecipes(JSON.parse(recipeJSON));
   }, []);
 
   useEffect(() => {
-    localStorage.setItem(LOCAL_STORAGE_KEY, JSON.stringify(recipes));
+    sessionStorage.setItem(LOCAL_STORAGE_KEY, JSON.stringify(recipes));
   }, [recipes]);
 
   const recipeContextValue = {
