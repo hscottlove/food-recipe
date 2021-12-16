@@ -75,14 +75,14 @@ export default function App() {
 const sampleRecipes = [
   {
     id: 1,
-    name: 'Plain Chicken',
-    servings: 3,
-    cookTime: '1:45',
-    instructions: `1. Put salt on chicken\n2. Put chicken in over\n3. Eat chicken`,
+    name: 'Milanesa',
+    servings: 4,
+    cookTime: '0:25',
+    instructions: `1. Put salt on beef\n2. Put beef in over\n3. Eat milanesa`,
     ingredients: [
       {
         id: 1,
-        name: 'Chicken',
+        name: 'Beef',
         amount: '2 Pounds',
       },
       {
