@@ -24,3 +24,7 @@
     height: 50vh;
 
 }
+
+.showcase .showcase-content {
+    z-index: 1;
+}

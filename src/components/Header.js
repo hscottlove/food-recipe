@@ -1,6 +1,8 @@
-import React from 'react';
+import React, { useContext } from 'react';
+import { RecipeContext } from './App';
 
 export default function Header() {
+  const { handleRecipeAdd } = useContext(RecipeContext);
   return (
     <div className='showcase'>
       <div className='container'>
@@ -13,7 +15,12 @@ export default function Header() {
               animi sint neque? Similique nostrum laboriosam qui eum officia
               cupiditate.
             </p>
-            <button className='btn btn--primary'>Add Recipe</button>
+            <button
+              onClick={() => handleRecipeAdd()}
+              className='btn btn--primary'
+            >
+              Add Recipe
+            </button>
           </div>
         </div>
       </div>
