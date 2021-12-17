@@ -2,13 +2,13 @@ import React, { useState, useEffect } from 'react';
 import Navbar from './Navbar';
 import RecipeList from '../components/RecipeList';
 import RecipeEdit from '../components/RecipeEdit';
-import '../css/App.css';
 import { v4 as uuidv4 } from 'uuid';
 import { library } from '@fortawesome/fontawesome-svg-core';
-import { fab, faFacebook, faTwitter } from '@fortawesome/free-brands-svg-icons';
+import { fab } from '@fortawesome/free-brands-svg-icons';
 import {} from '@fortawesome/free-solid-svg-icons';
+import '../css/App.css';
 
-library.add(fab, faFacebook, faTwitter);
+library.add(fab);
 
 export const RecipeContext = React.createContext();
 const LOCAL_STORAGE_KEY = 'cookingWithReact.recipes';
