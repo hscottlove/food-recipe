@@ -1,0 +1,12 @@
+.main-nav {
+    background-color: lightblue;
+    height: 100px;
+}
+
+.main-nav .flex {
+    justify-content: space-between;
+}
+
+.logo {
+    width: 50px;
+}

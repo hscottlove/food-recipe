@@ -1,5 +1,6 @@
 @import-normalize;
 @import './Font.css';
+@import './Navbar.css';
 @import './Buttons.css';
 @import './Recipe-list.css';
 @import './Ingredient-list.css';
@@ -9,6 +10,19 @@
 *, *::before, *::after {
     font-family: Gotham Rounded, sans-serif;
     box-sizing: border-box;
+}
+
+.container {
+    max-width: 1500px;
+    margin: 0 auto;
+    padding: 0 40px;
+}
+
+.flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
 }
 
 html {

@@ -1,8 +1,14 @@
 import React, { useState, useEffect } from 'react';
+import Navbar from './Navbar';
 import RecipeList from '../components/RecipeList';
 import RecipeEdit from '../components/RecipeEdit';
 import '../css/App.css';
 import { v4 as uuidv4 } from 'uuid';
+import { library } from '@fortawesome/fontawesome-svg-core';
+import { fab, faFacebook, faTwitter } from '@fortawesome/free-brands-svg-icons';
+import {} from '@fortawesome/free-solid-svg-icons';
+
+library.add(fab, faFacebook, faTwitter);
 
 export const RecipeContext = React.createContext();
 const LOCAL_STORAGE_KEY = 'cookingWithReact.recipes';
@@ -66,6 +72,7 @@ export default function App() {
 
   return (
     <RecipeContext.Provider value={recipeContextValue}>
+      <Navbar />
       <RecipeList recipes={recipes} />
       {selectedRecipe && <RecipeEdit recipe={selectedRecipe} />}
     </RecipeContext.Provider>
