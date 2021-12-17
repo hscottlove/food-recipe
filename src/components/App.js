@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import Navbar from './Navbar';
+import Header from './Header';
 import RecipeList from '../components/RecipeList';
 import RecipeEdit from '../components/RecipeEdit';
 import { v4 as uuidv4 } from 'uuid';
@@ -73,6 +74,7 @@ export default function App() {
   return (
     <RecipeContext.Provider value={recipeContextValue}>
       <Navbar />
+      <Header />
       <RecipeList recipes={recipes} />
       {selectedRecipe && <RecipeEdit recipe={selectedRecipe} />}
     </RecipeContext.Provider>
