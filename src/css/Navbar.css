@@ -10,3 +10,12 @@
 .logo {
     width: 50px;
 }
+
+.main-nav .social a {
+    color: hsl(222, 83%, 54%);
+    margin-left: .5rem;
+}
+
+.main-nav .social a:hover {
+    color: hsl(222, 73%, 40%);
+}

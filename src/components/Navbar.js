@@ -9,10 +9,10 @@ export default function Navbar() {
         <img className='logo' src={logo} alt='logo' />
         <div className='social'>
           <a href='https://www.facebook.com' target='_blank' rel='noreferrer'>
-            <FontAwesomeIcon icon={['fab', 'facebook']} />
+            <FontAwesomeIcon icon={['fab', 'facebook']} size='lg' />
           </a>
           <a href='https://www.twitter.com' target='_blank' rel='noreferrer'>
-            <FontAwesomeIcon icon={['fab', 'twitter']} />
+            <FontAwesomeIcon icon={['fab', 'twitter']} size='lg' />
           </a>
         </div>
       </div>
