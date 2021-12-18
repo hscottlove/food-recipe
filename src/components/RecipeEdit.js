@@ -53,7 +53,7 @@ export default function RecipeEdit({ recipe }) {
           name='name'
           id='name'
           value={recipe.name}
-          onInput={(e) => handleChange({ name: e.target.value })}
+          onChange={(e) => handleChange({ name: e.target.value })}
           className='recipe-edit__input'
         />
         <label htmlFor='cookTime' className='recipe-edit__label'>
@@ -64,7 +64,7 @@ export default function RecipeEdit({ recipe }) {
           name='cookTime'
           id='cookTime'
           value={recipe.cookTime}
-          onInput={(e) => handleChange({ cookTime: e.target.value })}
+          onChange={(e) => handleChange({ cookTime: e.target.value })}
           className='recipe-edit__input'
         />
         <label htmlFor='servings' className='recipe-edit__label'>
@@ -76,7 +76,7 @@ export default function RecipeEdit({ recipe }) {
           name='servings'
           id='servings'
           value={recipe.servings}
-          onInput={(e) =>
+          onChange={(e) =>
             handleChange({ servings: parseInt(e.target.value) || '' })
           }
           className='recipe-edit__input'
@@ -88,7 +88,7 @@ export default function RecipeEdit({ recipe }) {
           name='instructions'
           className='recipe-edit__input'
           value={recipe.instructions}
-          onInput={(e) => handleChange({ instructions: e.target.value })}
+          onChange={(e) => handleChange({ instructions: e.target.value })}
           id='instructions'
         />
       </div>
