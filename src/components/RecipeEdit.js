@@ -56,6 +56,18 @@ export default function RecipeEdit({ recipe }) {
           onChange={(e) => handleChange({ name: e.target.value })}
           className='recipe-edit__input'
         />
+        <label htmlFor='image' className='recipe-edit__label'>
+          Image
+        </label>
+        <input
+          type='text'
+          name='image'
+          id='image'
+          placeholder='Image URL'
+          value={recipe.image}
+          onChange={(e) => handleChange({ image: e.target.value })}
+          className='recipe-edit__input'
+        />
         <label htmlFor='cookTime' className='recipe-edit__label'>
           Cook Time
         </label>

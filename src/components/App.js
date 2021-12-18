@@ -45,6 +45,7 @@ export default function App() {
     const newRecipe = {
       id: uuidv4(),
       name: '',
+      image: '',
       servings: 1,
       cookTime: '',
       instructions: '',
@@ -88,6 +89,8 @@ const sampleRecipes = [
   {
     id: 1,
     name: 'Milanesa',
+    image:
+      'https://images.unsplash.com/photo-1542365887-1149961dccc7?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2370&q=80',
     servings: 4,
     cookTime: '0:25',
     instructions: `1. Put salt on beef\n2. Put beef in over\n3. Eat milanesa`,
@@ -107,6 +110,8 @@ const sampleRecipes = [
   {
     id: 2,
     name: 'Plain Pork',
+    image:
+      'https://images.unsplash.com/photo-1623047437095-27418540c288?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2148&q=80',
     servings: 5,
     cookTime: '0:45',
     instructions: `1. Put paprika on pork\n2. Put pork in over\n3. Eat pork`,

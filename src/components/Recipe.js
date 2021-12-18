@@ -4,7 +4,8 @@ import { RecipeContext } from '../components/App';
 
 export default function Recipe(props) {
   const { handleRecipeDelete, handleRecipeSelect } = useContext(RecipeContext);
-  const { id, name, cookTime, servings, instructions, ingredients } = props;
+  const { id, name, image, cookTime, servings, instructions, ingredients } =
+    props;
   return (
     <div className='recipe'>
       <div className='recipe__header'>
@@ -24,6 +25,12 @@ export default function Recipe(props) {
           </button>
         </div>
       </div>
+      {image && (
+        <div className='recipe__row'>
+          <span className='recipe__label'>Image:</span>
+          <img className='recipe__image' src={image} alt='food' />
+        </div>
+      )}
       <div className='recipe__row'>
         <span className='recipe__label'>Cook Time:</span>
         <span className='recipe__value'>{cookTime}</span>
